@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 ENHANCEMENTS</title>
+</head>
+<body>
+    <h3>HTML Enhancements</h3>
+    Auto-complete example<br>
+    <form action="myform.php" method="post" autocomplete="on">
+        <!-- The username, when clicked, will drop a list of saved inputs-->
+        <input type="text" name="username">
+        <!-- No list below as autocomplete is turned off -->
+        <input type="password" name="password" autocomplete="off">
+    </form><br>
+
+    Auto-focus example <br>
+    <!-- auto-focus means that this text box is selected first on page load -->
+    <input type="text" name="query" autofocus="'autofocus"><br><br>
+
+    <!-- placeholder string is in the text until input is given -->
+    Placeholder text example <br>
+    <input type="text" name="name" size="50" placeholder="First & Last name"><br><br>
+
+    Required attribute example <br>
+    <form action="HTML-other.html" methods="post">
+        <input type="text" name="creditcard" required="required">
+        <input type="submit" value="Submit button">
+    </form><br>
+
+    Override attributes example <br>
+    <form action="HTML-other.html" method="post">
+        <input type="text" name="field">
+        <input type="submit" formaction="anotherPage.html">
+    </form>
+
+    <br>
+    <input type="image" src="image.png" width="120" height="120"><br><br>
+
+    <!-- this isn't working as I think it should in chrome
+    Min and Max Attribute example<br>
+    <input type="time" name="alarm" value="7:00" min="5:00" max="09:00">
+    -->
+
+    <!-- Step = 3600 means the numbers go up and down in hour intervals -->
+    <!-- Min and max don't seem to be working as they should
+    ie, They are not restricting possible hours, as they should-->
+    <input type="time" name="meeting" value="12:00" min="9:00" max="16:00" step="3600">
+
+</body>
+</html>
