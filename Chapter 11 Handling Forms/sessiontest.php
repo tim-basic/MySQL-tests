@@ -1,7 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: admin
- * Date: 28/08/2018
- * Time: 11:59 PM
- */
+
+session_start();
+
+if(!isset($_SESSION['count'])) $_SESSION['count'] = 0;
+else ++$_SESSION['count'];
+
+echo $_SESSION['count'];
+
+?>
